@@ -1,2 +1,2 @@
 # Jokes React 
-Implementing Props and Object Destructuring.
+Implementing Props, Object Destructuring and mapping components.
