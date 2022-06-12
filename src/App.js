@@ -1,11 +1,24 @@
 import React from "react"
 import "./style.css"
 import Jokes from "./components/jokes"
+import JokesData from "./components/jokesData"
 
 export default function App(){
+  const jokeElements = JokesData.map(joke => {
+    return <Jokes setup={joke.setup} punchline={joke.punchline}/>
+  })
   return (
     <div>
-      <Jokes 
+      {jokeElements}
+      
+    </div>
+  )
+}
+
+{
+  
+  
+  /* <Jokes 
         setup="I got my daughter a fridge for her birthday."
         punchline="I can't wait to see her face light up when she opens it."
       />
@@ -32,7 +45,4 @@ export default function App(){
 
     <Jokes
        punchline="It’s hard to explain puns to kleptomaniacs because they always take things literally."
-    />  
-    </div>
-  )
-}
+    />   */}
